@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maruthi | Frontend Developer</title>
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Maruthi</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="btn">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Maruthi</span></h1>
+      <p>Frontend developer who loves creating smooth animations and modern UI.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+      <div class="card">
+        <h3>AeroWrite</h3>
+        <p>Gesture-controlled slide annotation app built using OpenCV & Streamlit.</p>
+      </div>
+      <div class="card">
+        <h3>Portfolio</h3>
+        <p>Modern personal website showcasing my skills and frontend designs.</p>
+      </div>
+      <div class="card">
+        <h3>RAG Agent</h3>
+        <p>Retrieval-Augmented Generation agent using n8n & Pinecone.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I'm passionate about frontend animation, creative web design, and integrating AI systems.
+      I enjoy building interactive experiences and deploying full-stack applications on AWS.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Let's collaborate! Reach me at <a href="mailto:your@email.com">your@email.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Maruthi. Built with ❤️ on AWS EC2.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
